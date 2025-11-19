@@ -1,6 +1,4 @@
-/**
- * Interface genérica para respuestas de la API
- */
+
 export interface ApiResponse<T> {
   success: boolean;
   message: string;
@@ -9,9 +7,6 @@ export interface ApiResponse<T> {
   timestamp?: string;
 }
 
-/**
- * Interface para respuestas paginadas
- */
 export interface PaginatedApiResponse<T> extends ApiResponse<T[]> {
   pagination: {
     page: number;
